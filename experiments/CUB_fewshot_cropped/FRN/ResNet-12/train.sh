@@ -1,0 +1,16 @@
+#!/bin/bash
+python train.py \
+    --opt sgd \
+    --lr 1e-1 \
+    --gamma 1e-1 \
+    --epoch 150 \
+    --val_epoch 2 \
+    --weight_decay 5e-4 \
+    --nesterov \
+    --train_way 10 \
+    --train_shot 5 \
+    --train_transform_type 0 \
+    --test_shot 1 5 \
+    --pre \
+    --resnet \
+    --gpu 0
